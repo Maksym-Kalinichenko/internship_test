@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Level_2_Middle</string>
+    <string name="user_add">User added successfully</string>
+    <string name="name_text">Name</string>
+    <string name="age_text">Age</string>
+    <string name="date_text">Date</string>
+    <string name="save_text_btn">Save</string>
+    <string name="student_text">Student</string>
+    <string name="isStudent_text">IsStudent</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

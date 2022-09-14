@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".AddActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/editName"
+            style="@style/GreenText"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:background="@drawable/round"
+            android:hint="@string/name_text"
+            android:inputType="textPersonName"
+            android:textColorHint="#263238"
+            app:layout_constraintBottom_toTopOf="@+id/textAgeFragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editAge"
+            style="@style/GreenText"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:background="@drawable/round"
+            android:hint="@string/age_text"
+            android:inputType="number"
+            android:textColorHint="#263238"
+            app:layout_constraintBottom_toTopOf="@+id/textDataFragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textNameFragment" />
+
+        <EditText
+            android:id="@+id/editDate"
+            style="@style/GreenText"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:background="@drawable/round"
+            android:ems="10"
+            android:hint="@string/date_text"
+            android:inputType="date"
+            android:textColorHint="#263238" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            style="@style/GreenText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_700"
+            android:gravity="center_horizontal"
+            android:text="@string/save_text_btn"
+            app:cornerRadius="?android:attr/scrollbarSize" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
